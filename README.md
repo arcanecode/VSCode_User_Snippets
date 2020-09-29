@@ -16,6 +16,10 @@ Note, in many of the snippets I include my name, websites, etc, so be sure to up
 
 Please see the [Snippet_Reference.md](Snippet_Reference.md) file, in this repository, for a quick overview of how a snippet file should be formatted, along with a quick reference of variables you can use inside your own snippets.
 
+## VSCode Settings Sync
+
+If you have enabled the new feature in VSCode, Settings Sync, then great news! User snippets are included in the sync feature. So any snippets you create on one computer are automatically propigated to all other computers you have VSCode on (and turned on Settings Sync). This applies to Windows, macOS, and Linux.
+
 ## MarkDown Snippets
 
 Note that by default, intellisense is not enabled in MarkDown files within VSCode, making them harder to use. See the article [Enable_Intellisense_In_MarkDown.md](Enable_Intellisense_In_MarkDown.md) in this repository for instructions on how to enable it.
