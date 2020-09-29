@@ -119,7 +119,7 @@ For inserting line or block comments, honoring the current language:
 
 ## MarkDown Snippets
 
-Note that by default, intellisense is not enabled in MarkDown files within VSCode, making them harder to use. See the article Enable_Intellisense_In_MarkDown.md in this repository for instructions on how to enable it.
+Note that by default, intellisense is not enabled in MarkDown files within VSCode, making them harder to use. See the article [Enable_Intellisense_In_MarkDown.md](Enable_Intellisense_In_MarkDown.md) in this repository for instructions on how to enable it.
 
 ---
 
