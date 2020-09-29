@@ -1,0 +1,263 @@
+{
+	// Place your snippets for markdown here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Markdown Image": {
+		"prefix": "mdimg",
+		"body": [
+			"![$0](path)"
+		],
+		"description": "Markdown Image Tag"
+	},
+
+	"Markdown Image Sized": {
+		"prefix": "mdimgsized",
+		"body": [
+			"<img src=\"Images/myimage.jpg\" width=320 height=240 alt=\"my image goes here\">"
+		],
+		"description": "Markdown Image Sized"
+	},
+
+	"Markdown Language PowerShell": {
+		"prefix": "mdps",
+		"body": [
+			"```powershell",
+      "$0",
+      "```",
+      ""
+		],
+		"description": "Markdown PowerShell Tag"
+	},
+
+	"Markdown Language Python": {
+		"prefix": "mdpy",
+		"body": [
+			"```python",
+      "$0",
+      "```",
+      ""
+		],
+		"description": "Markdown Python Tag"
+	},
+
+	"Markdown Language Bash": {
+		"prefix": "mdbash",
+		"body": [
+			"```bash",
+      "$0",
+      "```",
+      ""
+		],
+		"description": "Markdown Bash Tag"
+	},
+
+	"Markdown Link": {
+		"prefix": "mdlink",
+		"body": [
+			"[$0](http://)"
+		],
+		"description": "Markdown Link Tag"
+	},
+
+	"Markdown Blank Line": {
+		"prefix": "mdblankline",
+		"body": [
+			"<br>"
+		],
+		"description": "Markdown Blank Line"
+	},
+
+	"Markdown Comment": {
+		"prefix": "mdcomment",
+		"body": [
+			"[comment]: # ($0)  "
+		],
+		"description": "Markdown Comment"
+	},
+
+	"Markdown Comment Block": {
+		"prefix": "mdcommentblock",
+		"body": [
+			"<!---",
+      "  $0",
+      "-->"
+		],
+		"description": "Markdown Comment"
+	},
+
+	"Markdown Table Block": {
+		"prefix": "mdtable",
+		"body": [
+      "[comment] # (Use colons on both sides of the --- to center align, use on the right to right align)",
+      "",
+			"| Col 1 | Col 2 | Col 3 |",
+      "|-------|-------|-------|",
+      "| Text | Text | Text |"
+		],
+		"description": "Markdown Comment"
+	},
+
+	"Markdown List Unordered": {
+		"prefix": "mdlistunordered",
+		"body": [
+      "* Item 1",
+      "* Item 2",
+			"  * Subitem 2-1",
+      "  * Subitem 2-2"
+		],
+		"description": "Markdown List Unordered"
+	},
+
+	"Markdown List Ordered": {
+		"prefix": "mdlistordered",
+		"body": [
+      "1. Item 1",
+      "1. Item 2",
+			"   1. Subitem 2-1",
+      "   1. Subitem 2-2"
+		],
+		"description": "Markdown List Unordered"
+	},
+
+	"Markdown Block Quote": {
+		"prefix": "mdblockquote",
+		"body": [
+      "> $0",
+		],
+		"description": "Markdown Block Quote"
+	},
+
+	"Markdown Inline Code": {
+		"prefix": "mdinline",
+		"body": [
+      "`$0`",
+		],
+		"description": "Markdown Inline Code"
+	},
+
+	"Markdown Italic": {
+		"prefix": "mditalic",
+		"body": [
+      "_$0_",
+		],
+		"description": "Markdown Italics"
+	},
+
+	"Markdown Bold": {
+		"prefix": "mdbold",
+		"body": [
+      "**$0**",
+		],
+		"description": "Markdown Bold"
+	},
+
+	"Markdown Strikethrough": {
+		"prefix": "mdstrike",
+		"body": [
+      "~~$0~~",
+		],
+		"description": "Markdown Strikethrough"
+	},
+
+	"Markdown Task List": {
+		"prefix": "mdtasklist",
+		"body": [
+      "- [ ] Task here, use an x between the brackets to show completion",
+      "- [ ] $0",
+		],
+		"description": "Markdown Task List"
+	},
+
+	"Markdown Header 1": {
+		"prefix": "mdh1",
+		"body": [
+      "# $0",
+		],
+		"description": "Markdown Header 1"
+	},
+
+	"Markdown Header 2": {
+		"prefix": "mdh2",
+		"body": [
+      "## $0",
+		],
+		"description": "Markdown Header 2"
+	},
+
+	"Markdown Header 3": {
+		"prefix": "mdh3",
+		"body": [
+      "### $0",
+		],
+		"description": "Markdown Header 3"
+	},
+
+	"Markdown Header 4": {
+		"prefix": "mdh4",
+		"body": [
+      "#### $0",
+		],
+		"description": "Markdown Header 4"
+	},
+
+	"Markdown Header 5": {
+		"prefix": "mdh5",
+		"body": [
+      "##### $0",
+		],
+		"description": "Markdown Header 5"
+	},
+
+	"Markdown Header 6": {
+		"prefix": "mdh6",
+		"body": [
+      "###### $0",
+		],
+		"description": "Markdown Header 6"
+	},
+
+	"Markdown Author Info": {
+		"prefix": "mdauthor",
+		"body": [
+      "---",
+      "",
+      "## Author Information",
+      "",
+      "### Author",
+      "",
+      "Robert C. Cain | [@ArcaneCode](https://twitter.com/arcanecode) | arcanecode@gmail.com",
+      "",
+      "### Websites",
+      "",
+      "About Me: [http://arcanecode.me](http://arcanecode.me)",
+      "",
+      "Blog: [http://arcanecode.com](http://arcanecode.com)",
+      "",
+      "Github: [http://arcanerepo.com](http://arcanerepo.com)",
+      "",
+      "LinkedIn: [http://arcanecode.in](http://arcanecode.in)",
+      "",
+      "### Copyright Notice",
+      "",
+      "This document is Copyright (c) $CURRENT_YEAR Robert C. Cain. All rights reserved.",
+      "",
+      "The code samples herein is for demonstration purposes. No warranty or guarantee is implied or expressly granted.",
+      "",
+      "This document may not be reproduced in whole or in part without the express written consent of the author and/or Pluralsight. Information within can be used within your own projects.",
+      ""
+		],
+		"description": "Markdown Author Info"
+	}
+
+}
