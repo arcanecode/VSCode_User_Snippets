@@ -1,6 +1,6 @@
 # VSCode_User_Snippets
 
-This repository contains my custom snippets for VSCode (aka Visual Studio Code). You are free to copy and modify them for your installation of VSCode. You'll quickly find how useful snippets in VSCode can be.
+This repository contains my custom user snippets for VSCode (aka Visual Studio Code). You are free to copy and modify them for your installation of VSCode. You'll quickly find how useful snippets in VSCode can be.
 
 ## Editing your own User Snippets
 
