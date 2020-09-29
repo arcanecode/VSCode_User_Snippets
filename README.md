@@ -14,7 +14,11 @@ Copy and paste my snippet files into your VSCode instance, or take and modify th
 
 Note, in many of the snippets I include my name, websites, etc, so be sure to update them with your own information.
 
-Please see the Snippet_Reference.md file, in this repository, for a quick overview of how a snippet file should be formatted, along with a quick reference of variables you can use inside your own snippets.
+Please see the [Snippet_Reference.md](Snippet_Reference.md) file, in this repository, for a quick overview of how a snippet file should be formatted, along with a quick reference of variables you can use inside your own snippets.
+
+## MarkDown Snippets
+
+Note that by default, intellisense is not enabled in MarkDown files within VSCode, making them harder to use. See the article [Enable_Intellisense_In_MarkDown.md](Enable_Intellisense_In_MarkDown.md) in this repository for instructions on how to enable it.
 
 ---
 
