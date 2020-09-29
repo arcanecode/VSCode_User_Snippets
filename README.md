@@ -2,6 +2,20 @@
 
 This repository contains my custom snippets for VSCode (aka Visual Studio Code). You are free to copy and modify them for your installation of VSCode. You'll quickly find how useful snippets in VSCode can be.
 
+## Editing your own User Snippets
+
+In VSCode, select the *File* menu, *Preferences*, *User Snippets*
+
+In the search box that appears in the top middle of VSCode, find the language you want to create snippets for.
+
+So far this repository has snippets for PowerShell and MarkDown.
+
+Copy and paste my snippet files into your VSCode instance, or take and modify the ones you find useful.
+
+Note, in many of the snippets I include my name, websites, etc, so be sure to update them with your own information.
+
+Please see the Snippet_Reference.md file, in this repository, for a quick overview of how a snippet file should be formatted, along with a quick reference of variables you can use inside your own snippets.
+
 ---
 
 ## Author Information
