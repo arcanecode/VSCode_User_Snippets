@@ -1,0 +1,385 @@
+{
+	// Place your snippets for powershell here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	"PowerShell IfElse": {
+		"prefix": "psifelse",
+		"body": [
+			"  if ( $0 )",
+			"  {",
+			"    ",
+			"  }",
+			"  else",
+			"  {",
+			"    ",
+			"  }"
+		],
+		"description": "My preferred else formating"
+	},
+
+	"PowerShell Else": {
+		"prefix": "pselse",
+		"body": [
+			"  else",
+			"  {",
+			"    $0",
+			"  }"
+		],
+		"description": "My preferred else formating"
+	},
+
+  "PowerShell Help": {
+		"prefix": "pshelp",
+		"body": [
+			"<#",
+			".SYNOPSIS",
+			"synopsis",
+			"",
+			".DESCRIPTION",
+			"detail",
+			"",
+			".PARAMETER paramname",
+			"Description",
+			"",
+			".INPUTS",
+			"This cmdlet has no inputs.",
+			"",
+			".OUTPUTS",
+			"The cmdlet creates an array of one or more objects with the following properties",
+			"",
+			".EXAMPLE",
+			"example",
+			"",
+			" returns data similar to the following example:",
+			"",
+			".NOTES",
+	    "Data Fabricator - $TM_FILENAME",
+			"",
+			"Author: Robert C Cain | @ArcaneCode | arcane@arcanetc.com",
+			"",
+			"This code is Copyright (c) 2020 Robert C Cain All rights reserved",
+			"",
+			"The code herein is for demonstration purposes.",
+			"No warranty or guarantee is implied or expressly granted.",
+			"",
+			"This module may not be reproduced in whole or in part without",
+			"the express written consent of the author.",
+			"",
+			".LINK",
+			"https://github.com/arcanecode/DataFabricator/blob/master/Documentation/CMDLET-HERE.md",
+			"",
+      ".LINK",
+      "http://arcanecode.me",
+			"",
+			".LINK",
+			"http://datafabricator.com",
+		  "#>",
+		  ""
+		],
+		"description": "Standard Help Template for a Function"
+	},
+
+	"PowerShell File Header": {
+		"prefix": "pshead",
+		"body": [
+      "<#-------------------------------------------------------------------------------------------------",
+	    "  Data Fabricator - $TM_FILENAME",
+	    "  Author: Robert C. Cain | @ArcaneCode | arcane@arcanetc.com",
+			"		       http://arcanecode.me",
+	    "",
+			"  This code is Copyright (c) $CURRENT_YEAR Robert C. Cain. All rights reserved.",
+			"",
+	    "  The code herein is for demonstration purposes. No warranty or guarantee",
+			"  is implied or expressly granted.",
+			"",
+	    "  This module may not be reproduced in whole or in part without the express",
+	    "  written consent of the author. ",
+			"-----------------------------------------------------------------------------------------------#>",
+		  ""
+		],
+    "description": "File Header for PowerShell Headers"
+  },
+
+	"PowerShell Comment Line": {
+		"prefix": "psline",
+		"body": [
+			"#------------------------------------------------------------------------------------------------",
+			""
+		],
+    "description": "Divider Line"
+  },
+
+	"PowerShell Comment Line Indented": {
+		"prefix": "pslineindented",
+		"body": [
+			"  #----------------------------------------------------------------------------------------------",
+			""
+		],
+    "description": "Divider Line, Indented"
+  },
+
+	"PowerShell Comment Section": {
+		"prefix": "pssection",
+		"body": [
+			"#------------------------------------------------------------------------------------------------",
+			"#  $0",
+			"#------------------------------------------------------------------------------------------------",
+			""
+		],
+    "description": "Section Header"
+	},
+	
+	"PowerShell Comment Section Indented": {
+		"prefix": "pssectionindented",
+		"body": [
+			"#------------------------------------------------------------------------------------------------",
+			"#  $0",
+			"#------------------------------------------------------------------------------------------------",
+			""
+		],
+    "description": "Section Header, Indented"
+	},
+	
+	"PowerShell CmdletBinding": {
+		"prefix": "pscmdletbinding",
+		"body": [
+      "	[CmdletBinding()]",
+      "  param (",
+      "        )",
+      ""
+    ],
+    "description": "Cmdlet Binding Syntax"
+	},
+	
+	"PowerShell Function": {
+		"prefix": "psfunction",
+		"body": [
+			"function $0()",
+			"{",
+			"	[CmdletBinding()]",
+      "  param (",
+			"        )",
+			"",
+			"}",
+      ""
+    ],
+    "description": "Function Outline"
+  },
+
+	"PowerShell Class": {
+		"prefix": "psclass",
+		"body": [
+			"class $0",
+			"{",
+			"  [string] \\$x",
+			"  [int] \\$y",
+			"}",
+      ""
+    ],
+    "description": "Class Outline"
+  },
+
+	"PowerShell Measure": {
+		"prefix": "psmeasure",
+		"body": [
+			"\\$c_MaxLength = ($0 | Measure-Object -Maximum -Property Length).Maximum",
+      ""
+    ],
+    "description": "Measures the max length of strings in an array"
+  },
+
+	"PowerShell Measure With Header": {
+		"prefix": "psmeasurewithheader",
+		"body": [
+      "# Some functions use the length of a string for calculating spaces for",
+      "# proper on screen formatting. By calculating these 'constants' here,",
+      "# you can freely add or alter values in the above arrays without concern",
+      "# of adversely affecting the functions in the module",
+			"\\$c_MaxLength = ($0 | Measure-Object -Maximum -Property Length).Maximum",
+      ""
+    ],
+    "description": "Measures the max length of strings in an array, and includes a comment header"
+  },
+
+	"PowerShell Verbose Function Header": {
+		"prefix": "psverboseheader",
+		"body": [
+      "  # Function Name",
+      "  \\$fn = \"\\$(\\$PSCmdlet.MyInvocation.MyCommand.Module) - $(\\$PSCmdlet.MyInvocation.MyCommand.Name)\"",
+      "  \\$st = Get-Date",
+      "  Write-Verbose @\"",
+      "\\$fn",
+      "         Starting at $(\\$st.ToString('yyyy-MM-dd hh:mm:ss tt'))",
+      "\"@"
+    ],
+    "description": "Standard Write-Verbose text for the header of a function"
+  },
+
+
+	"PowerShell Verbose Function Footer": {
+		"prefix": "psverbosefooter",
+		"body": [
+      "  # Let user know we're done",
+      "  \\$et = Get-Date   # End Time",
+      "  Request-EndRunMessage -FunctionName \\$fn -StartTime \\$st -EndTime \\$et | Write-Verbose",
+    ],
+    "description": "Standard Write-Verbose text for the footer of a function"
+  },
+
+	"PowerShell Peter Test Basic": {
+		"prefix": "pstestbasic",
+		"body": [
+      "<#-------------------------------------------------------------------------------------------------",
+      "  Data Fabricator - $TM_FILENAME",
+      "  Author: Robert C. Cain | @ArcaneCode | arcane@arcanetc.com",
+      "           http://arcanecode.me",
+      "",
+      "  This code is Copyright (c) $CURRENT_YEAR Robert C. Cain. All rights reserved.",
+      "",
+      "  The code herein is for demonstration purposes. No warranty or guarantee",
+      "  is implied or expressly granted.",
+      "",
+      "  This module may not be reproduced in whole or in part without the express",
+      "  written consent of the author.",
+      "-----------------------------------------------------------------------------------------------#>",
+      "",
+      "Describe \"DataFabricator $TM_FILENAME_BASE\" {",
+      "",
+      "  BeforeAll {",
+      "    \\$module = 'DataFabricator'",
+      "    \\$function = '$TM_FILENAME_BASE'  # Remove .Tests from the name then remove this comment",
+      "    \\$here = \\$PSScriptRoot",
+      "",
+      "  }",
+      "",
+      "  Context \"<module> <function> Tests\" {",
+      "    It \"<function> returns value of x\" {",
+      "      \\$(function here) | Should -Be 'xyz'",
+      "    }",
+      "",
+      "  } # Context \"<module> <function> Tests\"",
+      "",
+      "} # Describe DataFabricator Tests"
+    ],
+    "description": "Basic Pester Test"
+  },
+
+	"PowerShell Peter Test Return Value": {
+		"prefix": "pstestreturnvalue",
+		"body": [
+      "<#-------------------------------------------------------------------------------------------------",
+      "  Data Fabricator - $TM_FILENAME",
+      "  Author: Robert C. Cain | @ArcaneCode | arcane@arcanetc.com",
+      "           http://arcanecode.me",
+      "",
+      "  This code is Copyright (c) $CURRENT_YEAR Robert C. Cain. All rights reserved.",
+      "",
+      "  The code herein is for demonstration purposes. No warranty or guarantee",
+      "  is implied or expressly granted.",
+      "",
+      "  This module may not be reproduced in whole or in part without the express",
+      "  written consent of the author.",
+      "",
+      "  In this test, it's not important what is returned, as it's a random value. It is just",
+      "  important that something is returned.",
+      "",
+      "  Second, we use a neat trick. By using \\$(\\$function) PowerShell will resulve the name of our",
+      "  function being tested from the variable, then execute that. So all you really have to do",
+      "  is update the value of the \\$function variable in the BeforeAll block, and you don't",
+      "  have to touch the rest of the test",
+      "-----------------------------------------------------------------------------------------------#>",
+      "",
+      "Describe \"DataFabricator $TM_FILENAME_BASE\" {",
+      "",
+      "  BeforeAll {",
+      "    \\$module = 'DataFabricator'",
+      "    \\$function = '$TM_FILENAME_BASE'  # Remove .Tests from the name then remove this comment",
+      "",
+      "  }",
+      "",
+      "  Context \"<module> <function> Tests\" {",
+      "    It \"<function> should return a value\" {",
+      "      \\$(\\$function).Length | Should -BeGreaterThan 0",
+      "    }",
+      "",
+      "  } # Context \"<module> <function> Tests\"",
+      "",
+      "} # Describe DataFabricator Tests"
+    ],
+    "description": "Pester test to see if a value is returned"
+  },
+
+	"PowerShell Peter Match Test": {
+		"prefix": "pstestmatch",
+		"body": [
+      "<#-------------------------------------------------------------------------------------------------",
+      "  Data Fabricator - $TM_FILENAME",
+      "  Author: Robert C. Cain | @ArcaneCode | arcane@arcanetc.com",
+      "           http://arcanecode.me",
+      "",
+      "  This code is Copyright (c) $CURRENT_YEAR Robert C. Cain. All rights reserved.",
+      "",
+      "  The code herein is for demonstration purposes. No warranty or guarantee",
+      "  is implied or expressly granted.",
+      "",
+      "  This module may not be reproduced in whole or in part without the express",
+      "  written consent of the author.",
+      "",
+      "  Common RegEx Syntax",
+      "    [A-Z]  - Single uppercase letter in the range A to Z",
+      "    [ABCD] - Single uppercase letter from the letters in A, B, C, or D",
+      "    \\d     - Single digit",
+      "    \\D     - Single character that is not a digit",
+      "    {3}    - Quantifer after another syntax, for example \\d{3} is three numbers.",
+      "             [A-Z]{2,4} reprents 2 to 4 uppercase letters",
+      "             [A-Z]{2,} represents 2 or more uppercase letters",
+      "    \\s     -  Whitespace character, such as spaces, tabs, line returns, [A-Z]\\s[A-Z]",
+      "    +      - One or more of a value, [A-Z]+",
+      "    ?      - Once or none, A?C matches ABC, ADC, etc.",
+      "    .      - Any character except line break, a.c matches abc, acc, adc, etc."
+      "",
+      "  Special Characters",
+      "    \\t     - Tab character",
+      "    \\r     - Carriage return character",
+      "    \\n     - Line feed character",
+      "    \\r\\n   - Line feed character",
+      "",
+      "  Characters that need to be escaped with a single backslash \\ before using them as a literal",
+      "    . * + ? \\$ ^ / \\ [ ] { } ( )",
+      "",
+      "  For a more extensive guide to RegEx, please see:",
+      "    https://www.rexegg.com/regex-quickstart.html",
+      "-----------------------------------------------------------------------------------------------#>",
+      "",
+      "Describe \"DataFabricator $TM_FILENAME_BASE\" {",
+      "",
+      "  BeforeAll {",
+      "    \\$module = 'DataFabricator'",
+      "    \\$function = '$TM_FILENAME_BASE'  # Remove .Tests from the name then remove this comment",
+      "    \\$here = \\$PSScriptRoot",
+      "",
+      "  }",
+      "",
+      "  Context \"<module> <function> Tests\" {",
+      "    It \"<function> matches a pattern of A0\" {",
+      "      \\$(\\$function) | Should -Match '[A-Z]\\d'",
+      "    }",
+      "",
+      "  } # Context \"<module> <function> Tests\"",
+      "",
+      "} # Describe DataFabricator Tests"
+    ],
+    "description": "Pester Match Test"
+  }
+
+}
