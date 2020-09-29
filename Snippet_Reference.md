@@ -25,11 +25,11 @@ Here is an example of a user snippet I created for PowerShell.
   }
 ```
 
-The first line is the formal name of the snippet ("PowerShell File Header")
+The first line is the formal name of the snippet (```PowerShell File Header```)
 
 The ```prefix``` is what you type in to trigger the use of the snippet.
 
-The ```body``` is the text that will be inserted. Note that you can indent the body text under the body tag if you wish. I usually do, but github didn't format it correctly for the code sample so I removed the indentions for this example.
+The ```body``` is the text that will be inserted. Note that you can indent the body text under the body tag if you wish. I usually do, but github wasn't formatting it correctly for this markdown file so I removed the indentions to make it readable.
 
 The ```description``` is descriptive text that appears beside the prefix when intellisense is activated.
 
