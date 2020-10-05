@@ -103,7 +103,7 @@
 			"  is implied or expressly granted.",
 			"",
 	    "  This module may not be reproduced in whole or in part without the express",
-	    "  written consent of the author. ",
+	    "  written consent of the author.",
 			"-----------------------------------------------------------------------------------------------#>",
 		  ""
 		],
@@ -142,9 +142,9 @@
 	"PowerShell Comment Section Indented": {
 		"prefix": "pssectionindented",
 		"body": [
-			"#------------------------------------------------------------------------------------------------",
-			"#  $0",
-			"#------------------------------------------------------------------------------------------------",
+			"  #----------------------------------------------------------------------------------------------",
+			"  #  $0",
+			"  #----------------------------------------------------------------------------------------------",
 			""
 		],
     "description": "Section Header, Indented"
@@ -236,7 +236,7 @@
     "description": "Standard Write-Verbose text for the footer of a function"
   },
 
-	"PowerShell Peter Test Basic": {
+	"PowerShell Pester Test Basic": {
 		"prefix": "pstestbasic",
 		"body": [
       "<#-------------------------------------------------------------------------------------------------",
@@ -274,7 +274,7 @@
     "description": "Basic Pester Test"
   },
 
-	"PowerShell Peter Test Return Value": {
+	"PowerShell Pester Test Return Value": {
 		"prefix": "pstestreturnvalue",
 		"body": [
       "<#-------------------------------------------------------------------------------------------------",
@@ -319,7 +319,7 @@
     "description": "Pester test to see if a value is returned"
   },
 
-	"PowerShell Peter Match Test": {
+	"PowerShell Pester Match Test": {
 		"prefix": "pstestmatch",
 		"body": [
       "<#-------------------------------------------------------------------------------------------------",
@@ -334,6 +334,8 @@
       "",
       "  This module may not be reproduced in whole or in part without the express",
       "  written consent of the author.",
+      "",
+      "  ---------------------------------------------------------------------------------------------",
       "",
       "  Common RegEx Syntax",
       "    [A-Z]  - Single uppercase letter in the range A to Z",
@@ -380,6 +382,27 @@
       "} # Describe DataFabricator Tests"
     ],
     "description": "Pester Match Test"
+  },
+
+	"PowerShell Pester RegEx Match Patterns": {
+		"prefix": "pstestpatterns",
+		"body": [
+       "    # RegEx Match Strings",
+       "    \\$matchPostalCodeUS = '\\d{5}'                        # Matches 12345",
+       "    \\$matchPostalCodePlus4US = '\\d{5}-\\d{4}'             # Matches 12345-6789",
+       "    \\$matchPhoneUS = '\\d{3}-\\d{3}-\\d{4}'                 # Matches 555-55-5555",
+       "    \\$matchTaxpayerIdUS = '\\d{3}-\\d{2}-\\d{4}'            # Matches 111-22-3333",
+       "",
+       "    \\$matchPostalCodeUK = '[A-Z]{2}\\d[A-Z] \\d[A-Z]{2}'   # Matches AA0A 1AA",
+       "    \\$matchPhoneUK = '\\(\\d{3}\\) \\d{4} \\d{4}'             # Matches (111) 2222 3333",
+       "    \\$matchTaxpayerIdMatch = '\\d{5} \\d{5}'               # Matches 12345 67890",
+       "",
+       "    \\$matchDateYYYYMMDD = '\\d{4}-\\d{2}-\\d{2}'            # Matches 2020-01-01",
+       "    \\$matchTimeHHMMSS = '\\d{2}:\\d{2}:\\d{2}'              # Matches 23:59:59",
+       "    \\$matchTimeHHMMSSAMPM = '\\d{2}:\\d{2}:\\d{2} [AP]M'    # Matches 12:59:59 PM",
+       "",
+    ],
+    "description": "Pester Common RegEx Match Patterns"
   }
 
 }
