@@ -348,7 +348,7 @@
       "    \\s     -  Whitespace character, such as spaces, tabs, line returns, [A-Z]\\s[A-Z]",
       "    +      - One or more of a value, [A-Z]+",
       "    ?      - Once or none, A?C matches ABC, ADC, etc.",
-      "    .      - Any character except line break, a.c matches abc, acc, adc, etc."
+      "    .      - Any character except line break, a.c matches abc, acc, adc, etc.",
       "",
       "  Special Characters",
       "    \\t     - Tab character",
