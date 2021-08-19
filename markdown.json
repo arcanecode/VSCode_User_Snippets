@@ -29,6 +29,17 @@
 		"description": "Markdown Image Sized"
 	},
 
+	"Markdown Language Generic Code": {
+		"prefix": "mdcode",
+		"body": [
+			"```",
+      "$0",
+      "```",
+      ""
+		],
+		"description": "Markdown Generic Code Tag"
+	},
+
 	"Markdown Language PowerShell": {
 		"prefix": "mdps",
 		"body": [
@@ -60,6 +71,19 @@
       ""
 		],
 		"description": "Markdown Bash Tag"
+	},
+
+	"Markdown Code Result": {
+		"prefix": "mdresult",
+		"body": [
+			"Result:",
+			"",
+			"```",
+      "$0",
+      "```",
+      ""
+		],
+		"description": "Markdown Code Result"
 	},
 
 	"Markdown Link": {
